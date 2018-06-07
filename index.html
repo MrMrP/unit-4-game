@@ -3,14 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>CRYSTALS COLLECTOR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
+
 <body>
+    <div class="main header">
+        <div>
+            <header>
+                <h1>CRYSTALS COLLECTOR!</h1>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="instructions">
+        <p> - You will be given a random number to start with at the start of the game.</p>
+        <p> - There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p> - You win the game by matching your total score to random number, you lose
+            the game if your total score goes above the random number.</p>
+        <p> - The value of each crystal is hidden from you until you click on it.</p>
+        <p> - Each time when the game starts, the game will change the value of each crystal</p>
+        </div>
+    </div>
+    
+    <div class="guess-this" id="random-number">
+        <p>Random Number</p>
+        <span>
+        <div class="player-stats" id="stats">
+            <div class="wins">
+                <p>Wins:</p>
+            </div>
+    
+            <div class="losses">
+                <p>Losses:</p>
+            </div>
+        </div>
+
+        </span>
+    </div>
+
+    <div class="Crystals">
+        <img src="assets/images/image1.jpg" height="100px" width="100px"><img>
+        <img src="assets/images/image2.jpg" height="100px" width="100px"><img>
+        <img src="assets/images/image3.jpg" height="100px" width="100px"><img>
+        <img src="assets/images/image4.jpg" height="100px" width="100px"><img>
+    </div>
+
+    <div class="total-score">
+        <p>Your total score is:</p>
+    </div>
+
+    <div class="final-score" id="score">
+        <p>0</p>
+    </div>
+
+
 <script src="assets/javascript/game.js"></script>    
 </body>
-</html>f
+</html>
