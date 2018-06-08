@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
+    <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>  
 </head>
 
 <body>
@@ -31,16 +31,18 @@
         </div>
     </div>
     
-    <div class="guess-this" id="random-number">
-        <p>Random Number</p>
+    <div class="guess-this">
+        <div id="random-number">
+            <p>Random Number</p>
+        </div>
         <span>
         <div class="player-stats" id="stats">
             <div class="wins">
-                <p>Wins:</p>
+                <p>Wins: 0</p>
             </div>
     
             <div class="losses">
-                <p>Losses:</p>
+                <p>Losses: 0</p>
             </div>
         </div>
 
@@ -48,10 +50,10 @@
     </div>
 
     <div class="Crystals">
-        <img src="assets/images/image1.jpg" height="100px" width="100px"><img>
-        <img src="assets/images/image2.jpg" height="100px" width="100px"><img>
-        <img src="assets/images/image3.jpg" height="100px" width="100px"><img>
-        <img src="assets/images/image4.jpg" height="100px" width="100px"><img>
+        <img src="assets/images/image1.jpg" id="one" height="100px" width="100px"><img>
+        <img src="assets/images/image2.jpg" id="two" height="100px" width="100px"><img>
+        <img src="assets/images/image3.jpg" id="three" height="100px" width="100px"><img>
+        <img src="assets/images/image4.jpg" id="four" height="100px" width="100px"><img>
     </div>
 
     <div class="total-score">
