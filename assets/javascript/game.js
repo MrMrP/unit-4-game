@@ -75,12 +75,21 @@ $ (document) .ready (function () {
             Wins++;
             alert("You Win!")
            $(".wins").text("Wins: " + Wins);
+           reset()
+           
             }
             if (totalScore > targetNumber) {
                 Losses++;
                 alert("You Lose!")
-                $(".losses").text("Losses: " + Losses);   
+                $(".losses").text("Losses: " + Losses); 
+                
+                 
             }
+            function reset (){
+                totalScore = 0;
+                targetNumber;
+              };
+              reset()
         }
-    
+        
 })
